@@ -1,8 +1,5 @@
-data = """Date,Desc,Amount
-2023-01-01,Salary,5000
-2023-01-02,Rent,-1200
-2023-01-03,Groceries,-150
-2023-01-04,Freelance,300"""
+with open("data.csv", "r") as file:
+    data = file.read()
 
 a=data.strip().split("\n")
 total_spent = 0
